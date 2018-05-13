@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu1">
+
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="103dp"
+        android:layout_height="63dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
+        android:layout_toStartOf="@+id/iv_coins"
+        android:background="@drawable/button2"
+        android:fontFamily="@font/baloo"
+        android:text="MENU"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="498dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/baloo"
+        android:text="Congratulations!"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_restart"
+        android:layout_width="99dp"
+        android:layout_height="62dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btn_menu"
+        android:layout_marginEnd="235dp"
+        android:background="@drawable/button2"
+        android:fontFamily="@font/baloo"
+        android:text="Restart"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="120dp"
+        android:layout_height="59dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btn_menu"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/button2"
+        android:fontFamily="@font/baloo"
+        android:text="Next Level"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/iv_coins"
+        android:layout_width="93dp"
+        android:layout_height="79dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="116dp"
+        android:layout_toStartOf="@+id/btn_restart"
+        android:background="@drawable/coin"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_coins"
+        android:layout_width="134dp"
+        android:layout_height="77dp"
+        android:layout_alignStart="@+id/btn_restart"
+        android:layout_alignTop="@+id/iv_coins"
+        android:text="+5"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="48sp"
+        android:visibility="invisible" />
+</RelativeLayout>
